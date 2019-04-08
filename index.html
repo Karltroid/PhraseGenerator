@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- meta info-->
+		<meta charset="UTF-8" />
+		<meta name="description" content="A website that gets a custom number of words and combines them to create a phrase. Main Purpose: Project Inspiration" />
+		<meta name="keywords" content="words, generator, phrase, inspire, inpiration, project, idea, dictionary" />
+		<meta name="author" content="Karl Palmer" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- stylesheet(s) -->
+		<link rel="stylesheet" type="text/css" media="(min-width: 990px)" href="stylesheets/desktop.css" />
+		<link rel="stylesheet" type="text/css" media="(max-width: 990px)" href="stylesheets/mobile.css" />
+
+
+		<!-- script(s) -->
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script src="scripts/generator.js"></script>
+
+		<!-- site title & icon -->
+		<link rel="icon" type="image/x-icon" href="images/meta/favicon.png" />
+		<title>Phrase Gen</title>
+	</head>
+	<body>
+
+		<header id="user-controls">
+			<input type="number" value="1" min="1" id="word-amount" />
+			<input type="button" value="New Phrase" onclick="getphrase()" />
+		</header>
+
+		<div id="phrase-box" class="box">
+			<!-- generate <span>'s with phrase' -->
+		</div>
+
+		<div id="fav-box" class="box">
+			<!-- generate <span>'s with phrase' -->
+		</div>
+
+	</body>
+</html>
